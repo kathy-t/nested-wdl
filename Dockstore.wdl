@@ -1,10 +1,6 @@
-version 1.0
-
 import "first-import.wdl" as first
 task hello {
-  input {
-    String name
-  }
+  String name
 
   command {
     echo 'Hello ${name}!'
@@ -16,6 +12,5 @@ task hello {
 
 workflow test {
   call hello
-  call first.hello2
-
+  call first.hello
 }
