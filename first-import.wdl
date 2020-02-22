@@ -1,9 +1,7 @@
-version 1.0
 import "second-import.wdl" as second
-task hello2 {
-  input {
-    String name
-  }
+task hello {
+  String name
+
   command {
     echo 'Hello ${name}!'
   }
