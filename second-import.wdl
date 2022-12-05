@@ -1,7 +1,9 @@
 version 1.1
 
 task hello {
-  String name
+  input {
+    String name
+  }
 
   command {
     echo 'Hello ${name}!'
