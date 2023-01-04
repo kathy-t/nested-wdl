@@ -1,4 +1,4 @@
-version 1.1
+version v1.1
 
 import "second-import.wdl" as second
 task hello {
